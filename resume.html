@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Vineet Kekatpure</title>
+    <!-- CSS Variables -->
+    <link rel="stylesheet" href="theme.css">
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- Components Loader -->
+    <script src="components.js"></script>
+</head>
+
+<body data-theme="tanner" data-mode="light">
+
+    <!-- Progress Bar -->
+    <div id="scroll-progress"></div>
+
+    <!-- Header Placeholder -->
+    <div id="header-placeholder"></div>
+
+    <!-- Main Content -->
+    <main>
+        <section id="resume" class="section resume-section">
+            <h2 class="section-title">Resume</h2>
+            <div class="resume-container">
+                <!-- Sidebar -->
+                <aside class="resume-sidebar">
+                    <!-- Hamburger Menu Button (Mobile Only) -->
+                    <button class="hamburger-btn" id="resume-menu-toggle" aria-label="Toggle Resume Menu">
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                    </button>
+                    <div class="resume-nav-items" id="resume-nav-items">
+                        <button class="resume-nav-btn" data-target="res-summary">Summary</button>
+                        <button class="resume-nav-btn" data-target="res-experience">Experience</button>
+                        <button class="resume-nav-btn" data-target="res-skills">Technical Skills</button>
+                        <button class="resume-nav-btn" data-target="res-education">Education</button>
+                        <button class="resume-nav-btn" data-target="res-volunteering">Volunteering</button>
+                        <button class="resume-nav-btn" data-target="res-certifications">Certifications</button>
+                        <button class="resume-nav-btn" data-target="res-languages">Languages</button>
+                        <a href="assets/Resume.pdf" download="Vineet-Kekatpure-Resume.pdf" class="download-btn">
+                            Download PDF <i class="ph ph-download-simple"></i>
+                        </a>
+                    </div>
+                </aside>
+
+                <!-- Resume Content -->
+                <div class="resume-content-wrapper">
+                    <div id="res-summary" class="resume-block">
+                        <h3>Summary</h3>
+                        <p>Results-driven Software Engineer II and Scrum Master with over 3 years of experience in the
+                            cybersecurity domain at Forcepoint. Expert in balancing technical execution with Agile
+                            leadership, overseeing high-velocity delivery for the DLP Engine team. Proven track record
+                            in modernizing legacy systems, automating developer workflows, and engineering core C++
+                            security components.</p>
+                    </div>
+
+                    <div id="res-experience" class="resume-block">
+                        <h3>Experience</h3>
+                        <div class="job-item">
+                            <div class="job-header">
+                                <h4>Forcepoint</h4>
+                                <span class="job-location">Thane, India</span>
+                            </div>
+                            <div class="job-subheader">
+                                <span class="job-role">Software Engineer II</span>
+                                <span class="job-date">July 2022 – Present</span>
+                            </div>
+
+                            <h5 class="job-category">Core Engineering & Development</h5>
+                            <ul class="job-details">
+                                <li><strong>Core Security Features:</strong> Engineered a custom algorithm for 'Random
+                                    Text Extraction' and developed C++ filetype classifiers for the core DLP engine.
+                                </li>
+                                <li><strong>Legacy Modernization:</strong> Led a 10-year refresh of critical external
+                                    libraries to fix long-standing security gaps and update the system.</li>
+                                <li><strong>System Rewrite:</strong> Managed the architectural move from legacy Python 2
+                                    to Python 3 for the DLP FSM System Health to make the system up to date and modern.
+                                </li>
+                                <li><strong>Critical Fixes:</strong> Handled high-priority "fastrack" escalations and
+                                    fixed major bugs to keep the security engine running smoothly.</li>
+                            </ul>
+
+                            <h5 class="job-category">Agile Leadership & Delivery</h5>
+                            <ul class="job-details">
+                                <li><strong>Scrum Leadership:</strong> Orchestrate all Scrum ceremonies, including PI
+                                    Planning and Capacity Planning, Daily Standups, Sprint Planning, and Retrospectives
+                                    for the DLP Engine team to ensure roadmap alignment.</li>
+                                <li><strong>Predictable Velocity:</strong> My scrum consistently achieved a 75% average
+                                    completion rate for committed initiatives per PI in an Agile environment.</li>
+                                <li><strong>Process Optimization:</strong> Designed and deployed a custom Python
+                                    automation script that reduced the time spent by developers on Jira ticket
+                                    administration by approximately 90% across the organization.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div id="res-skills" class="resume-block">
+                        <h3>Technical Skills</h3>
+                        <ul class="skills-list">
+                            <li><strong>Programming Languages:</strong> C++, Python</li>
+                            <li><strong>Core Technical:</strong> Data Structures & Algorithms (DSA), Object-Oriented
+                                Programming (OOP), System Architecture, Code Optimization, Debugging, Legacy Code
+                                Modernization, Technical Debt Mitigation</li>
+                            <li><strong>Tools & Platforms:</strong> Visual Studio, Git, Perforce, Makefiles, Jira</li>
+                            <li><strong>Agile Leadership:</strong> Scrum Master, PI Planning, Capacity Planning,
+                                Retrospectives</li>
+                        </ul>
+                    </div>
+
+                    <div id="res-education" class="resume-block">
+                        <h3>Education</h3>
+                        <div class="edu-item">
+                            <h4>Fr. Conceicao Rodrigues Institute of Technology, Vashi</h4>
+                            <span class="edu-university">Mumbai University</span>
+                            <span>Bachelor of Engineering in Information Technology (8.37 CGPI)</span>
+                            <span class="edu-date">2018 – 2022</span>
+                        </div>
+                    </div>
+
+                    <div id="res-volunteering" class="resume-block">
+                        <h3>Volunteering</h3>
+                        <div class="job-item">
+                            <div class="job-header">
+                                <h4>Fr. Conceicao Rodrigues Institute of Technology</h4>
+                                <span class="job-location">Mumbai University</span>
+                            </div>
+                            <div class="job-subheader">
+                                <span class="job-role">Member, Board of Studies</span>
+                                <span class="job-date">April 2024 – Present</span>
+                            </div>
+                            <ul class="job-details">
+                                <li>Collaborated with experts from education and tech on the strategic design of
+                                    academic syllabi, including the selection of subjects, modules, and laboratory
+                                    curriculum.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div id="res-certifications" class="resume-block">
+                        <h3>Certifications</h3>
+                        <ul class="cert-list">
+                            <li>
+                                <a href="https://www.udemy.com/certificate/UC-a0a0912b-9347-4923-aca7-90fdb0d2d7ac/"
+                                    target="_blank" rel="noopener noreferrer">
+                                    <i class="ph ph-link"></i>
+                                    <strong>Agile Scrum for Beginners + Scrum Master Certification PSM 1</strong>
+                                </a>
+                                (Udemy, Oct 2024)
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div id="res-languages" class="resume-block">
+                        <h3>Languages</h3>
+                        <ul class="skills-list">
+                            <li><strong>Spoken:</strong> English, Hindi, Marathi</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

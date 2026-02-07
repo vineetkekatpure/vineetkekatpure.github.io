@@ -1,0 +1,199 @@
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[colorlinks=true, urlcolor=blue, linkcolor=blue]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+% \raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Vineet Kekatpure} \\ \vspace{1pt}
+    \small +91-7021312855 $|$ \href{mailto:vineet.kekatpure@gmail.com}{vineet.kekatpure@gmail.com} $|$ 
+    \href{https://www.linkedin.com/in/vineet-kekatpure}{linkedin.com/in/vineet-kekatpure}
+\end{center}
+
+
+%-----------SUMMARY-----------
+\section{Summary}
+  \small{Results-driven Software Engineer II and Scrum Master with over 3 years of experience in the cybersecurity domain at Forcepoint. Expert in balancing technical execution with Agile leadership, overseeing high-velocity delivery for the DLP Engine team. Proven track record in modernizing legacy systems, automating developer workflows, and engineering core C++ security components.}
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Forcepoint}{Thane, India}
+      {Software Engineer II}{July 2022 -- Present}
+      \resumeItemListStart
+        \resumeItem{\textbf{Core Engineering \& Development}}
+        \resumeItemListStart
+            \resumeItem{\textbf{Core Security Features}: Engineered a custom algorithm for 'Random Text Extraction' and developed C++ filetype classifiers for the core DLP engine.}
+            \resumeItem{\textbf{Legacy Modernization}: Led a 10-year refresh of critical external libraries to fix long-standing security gaps and update the system.}
+            \resumeItem{\textbf{System Rewrite}: Managed the architectural move from legacy Python 2 to Python 3 for the DLP FSM System Health to make the system up to date and modern.}
+            \resumeItem{\textbf{Critical Fixes}: Handled high-priority ``fastrack'' escalations and fixed major bugs to keep the security engine running smoothly.}
+        \resumeItemListEnd
+        
+        \resumeItem{\textbf{Agile Leadership \& Delivery}}
+        \resumeItemListStart
+            \resumeItem{\textbf{Scrum Leadership}: Orchestrate all Scrum ceremonies, including PI Planning and Capacity Planning, Daily Standups, Sprint Planning, and Retrospectives for the DLP Engine team to ensure roadmap alignment.}
+            \resumeItem{\textbf{Predictable Velocity}: My scrum consistently achieved a 75\% average completion rate for committed initiatives per PI in an Agile environment.}
+            \resumeItem{\textbf{Process Optimization}: Designed and deployed a custom Python automation script that reduced the time spent by developers on Jira ticket administration by approximately 90\% across the organization.}
+        \resumeItemListEnd
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming Languages}{: C++, Python.} \\
+     \textbf{Core Technical}{: Data Structures \& Algorithms (DSA), Object-Oriented Programming (OOP), System Architecture, Code Optimization, Debugging, Legacy Code Modernization, Technical Debt Mitigation} \\
+     \textbf{Tools \& Platforms}{: Visual Studio, Git, Perforce, Makefiles, Jira.} \\
+     \textbf{Agile Leadership}{: Scrum Master, PI Planning, Capacity Planning, Retrospectives.}
+    }}
+ \end{itemize}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Fr. Conceicao Rodrigues Institute of Technology, Vashi}{Mumbai University}
+      {Bachelor of Engineering in Information Technology (8.37 CGPI)}{2018 -- 2022}
+  \resumeSubHeadingListEnd
+
+
+%-----------VOLUNTEERING-----------
+\section{Volunteering}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Fr. Conceicao Rodrigues Institute of Technology}{Mumbai University}
+      {Member, Board of Studies}{April 2024 -- Present}
+      \resumeItemListStart
+        \resumeItem{Collaborated with experts from education and tech on the strategic design of academic syllabi, including the selection of subjects, modules, and laboratory curriculum.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------CERTIFICATIONS-----------
+\section{Certifications}
+  \resumeSubHeadingListStart
+    \resumeItem{\faLink~ \href{https://www.udemy.com/certificate/UC-a0a0912b-9347-4923-aca7-90fdb0d2d7ac/}{\textbf{Agile Scrum for Beginners + Scrum Master Certification PSM 1}} (Udemy, Oct 2024)}
+  \resumeSubHeadingListEnd
+
+
+
+%-----------LANGUAGES-----------
+\section{Languages}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Spoken}{: English, Hindi, Marathi}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}

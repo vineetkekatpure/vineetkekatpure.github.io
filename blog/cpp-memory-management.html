@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding C++ Memory Management - Vineet Kekatpure</title>
+    <!-- CSS Variables -->
+    <link rel="stylesheet" href="../theme.css">
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="../styles.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- Components Loader -->
+    <script src="../components.js"></script>
+</head>
+
+<body data-theme="tanner" data-mode="light">
+
+    <!-- Progress Bar -->
+    <div id="scroll-progress"></div>
+
+    <!-- Header Placeholder -->
+    <div id="header-placeholder"></div>
+
+    <!-- Main Content -->
+    <main>
+        <article class="section blog-content">
+            <a href="../blogs.html" class="back-link">&larr; Back to Blogs</a>
+
+            <header>
+                <h1 class="blog-post-title">Understanding C++ Memory Management</h1>
+                <span class="blog-post-date">Feb 15, 2025</span>
+            </header>
+
+            <div class="blog-body">
+                <p>Memory management is a critical aspect of C++ programming. Unlike managed languages like Java or
+                    Python, C++ gives developers direct control over memory allocation and deallocation. This power
+                    comes with great responsibility.</p>
+
+                <h2>The Old Way: new and delete</h2>
+                <p>Traditionally, we used <code>new</code> to allocate memory on the heap and <code>delete</code> to
+                    free it. However, forgetting to delete led to memory leaks, and deleting twice led to undefined
+                    behavior.</p>
+
+                <h2>Enter Smart Pointers</h2>
+                <p>Modern C++ (C++11 and later) introduced smart pointers: <code>std::unique_ptr</code>,
+                    <code>std::shared_ptr</code>, and <code>std::weak_ptr</code>. These wrap raw pointers and strictly
+                    manage their lifetime using RAII (Resource Acquisition Is Initialization).
+                </p>
+
+                <p>Using <code>std::unique_ptr</code> ensures that a resource has a single owner and is automatically
+                    cleaned up when the owner goes out of scope. This eliminates a vast class of memory bugs.</p>
+
+                <h2>Conclusion</h2>
+                <p>By leveraging RAII and smart pointers, we can write robust, exception-safe, and leak-free C++ code.
+                </p>
+            </div>
+        </article>
+    </main>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <script src="../script.js"></script>
+</body>
+
+</html>

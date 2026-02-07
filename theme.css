@@ -1,9 +1,4 @@
-/* =========================================
-   THEME: THE TANNER
-   Vibe: Industrial Concrete & Raw Leather
-   ========================================= */
-
-/* LIGHT MODE: The Workshop Floor */
+/* LIGHT MODE: */
 body[data-theme="tanner"][data-mode="light"] {
     /* A neutral, industrial grey base (not white) */
     --bg-body: #E5E5E5;
@@ -24,7 +19,7 @@ body[data-theme="tanner"][data-mode="light"] {
     --border: #BDBDBD;
 }
 
-/* DARK MODE: The Night Shift */
+/* DARK MODE: */
 body[data-theme="tanner"][data-mode="dark"] {
     /* Deep, neutral dark grey (Asphalt) - avoids blue tints */
     --bg-body: #121212;
