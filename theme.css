@@ -1,0 +1,46 @@
+/* =========================================
+   THEME: THE TANNER
+   Vibe: Industrial Concrete & Raw Leather
+   ========================================= */
+
+/* LIGHT MODE: The Workshop Floor */
+body[data-theme="tanner"][data-mode="light"] {
+    /* A neutral, industrial grey base (not white) */
+    --bg-body: #E5E5E5;
+    /* Slightly darker grey for navigation to create hierarchy */
+    --bg-nav: #D4D4D4;
+    /* Very light grey for cards to lift them off the concrete */
+    --bg-card: #F5F5F5;
+
+    /* Almost pure black for maximum legibility */
+    --text-main: #171717;
+    --text-sub: #525252;
+
+    /* Deep, reddish-brown leather tone */
+    --accent: #A0522D;
+    --accent-hover: #7a3e21;
+
+    /* Mechanical grey borders */
+    --border: #BDBDBD;
+}
+
+/* DARK MODE: The Night Shift */
+body[data-theme="tanner"][data-mode="dark"] {
+    /* Deep, neutral dark grey (Asphalt) - avoids blue tints */
+    --bg-body: #121212;
+    /* Pure black for the nav bar to ground the top */
+    --bg-nav: #000000;
+    /* Dark grey card to separate content */
+    --bg-card: #1E1E1E;
+
+    /* Off-white text */
+    --text-main: #EDEDED;
+    --text-sub: #A3A3A3;
+
+    /* Lighter, golden-brown leather to pop against the dark background */
+    --accent: #CD853F;
+    --accent-hover: #b06d2e;
+
+    /* Subtle dark borders */
+    --border: #333333;
+}
