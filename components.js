@@ -69,16 +69,30 @@
         }
     }
 
+    // Inject favicon dynamically
+    function injectFavicon() {
+        // Check if favicon already exists
+        if (!document.querySelector('link[rel="icon"]')) {
+            const favicon = document.createElement('link');
+            favicon.rel = 'icon';
+            favicon.type = 'image/jpeg';
+            favicon.href = assetPath + 'light_mode_logo.jpg';
+            document.head.appendChild(favicon);
+        }
+    }
+
     // Set ASSET_PATH for script.js
     window.ASSET_PATH = assetPath;
 
     // Run on DOM ready
     if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', () => {
+            injectFavicon();
             injectHeader();
             injectFooter();
         });
     } else {
+        injectFavicon();
         injectHeader();
         injectFooter();
     }
